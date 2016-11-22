@@ -22,7 +22,7 @@
   {
     "repository": "Cyanogenmod/android_external_bson",
     "target_path": "external/bson",
-    "branch": "cm-13.0"
+    "branch": "cm-14.1"
   }
 ]
 
