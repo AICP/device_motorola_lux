@@ -5,7 +5,7 @@
     "branch": "n7.1"
   },
   {
-    "repository":  "desaishivam26/android_kernel_motorola_msm8916",
+    "repository":  "LineageOS/android_kernel_motorola_msm8916",
     "target_path": "kernel/motorola/msm8916",
     "branch": "cm-14.1"
   },
