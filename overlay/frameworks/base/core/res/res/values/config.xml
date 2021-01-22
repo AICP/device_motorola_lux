@@ -68,4 +68,10 @@
 
     <!-- Whether device has Turbo power charging support -->
     <bool name="config_hasTurboPowerCharger">true</bool>
+
+    <!-- Does the battery/notification LEDs support pulsing? Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">false</bool>
+
+    <!-- Does the device support battery LED? -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
 </resources>
