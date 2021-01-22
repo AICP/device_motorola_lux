@@ -34,6 +34,9 @@ TARGET_SCREEN_DENSITY := 480
 # HIDL Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Power
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
+
 # Kernel
 TARGET_KERNEL_CONFIG := lux_defconfig
 
