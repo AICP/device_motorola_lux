@@ -173,6 +173,14 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time 40000
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 499200
 
+    # Update foreground and background cpusets
+    # Reserve CPU 7 for the top app
+    write /dev/cpuset/foreground/cpus 0-6
+    write /dev/cpuset/background/cpus 4-6
+    write /dev/cpuset/system-background/cpus 4-6
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/restricted/cpus 4-7
+
     # re-enable bcl hotplug
     write /sys/devices/soc.0/qcom,bcl.16/mode "disable"
     write /sys/devices/soc.0/qcom,bcl.16/hotplug_mask 15
