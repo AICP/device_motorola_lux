@@ -34,9 +34,6 @@ TARGET_SCREEN_DENSITY := 480
 # HIDL Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Display
-TARGET_SCREEN_DENSITY := 480
-
 # Kernel
 TARGET_KERNEL_CONFIG := lux_defconfig
 
