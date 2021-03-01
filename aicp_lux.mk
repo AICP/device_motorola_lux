@@ -29,10 +29,18 @@ PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := lux
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Moto X Play" \
+    TARGET_DEVICE="lux" \
     PRIVATE_BUILD_DESC="lux_retca-user 5.1.1 LPD23.118-10 19 release-keys"
+
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 BUILD_FINGERPRINT := "motorola/lux_retca/lux:5.1.1/LPD23.118-10/19:user/release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Jeferson Oliveira (jro1979oliver)"
+
+PRODUCT_OVERRIDE_INFO := true
+PRODUCT_OVERRIDE_FINGERPRINT := motorola/lux_retca/lux:5.1.1/LPD23.118-10/19:user/release-keys
+
